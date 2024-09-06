@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickServe - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo"><img src="logo.jpg" width="150" alt=""></div>
+            <ul class="main-nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+      
+        
+            <nav class="navigation">
+                <ul>
+                    <li><a href="/quickserve/provider/form.html">Register As A Professional</a></li>
+                    <li><a href="#" id="loginBtn" class="btn">Login</a></li>
+                    <li><a href="#" id="signupBtn" class="btn">Signup</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to QuickServe</h1>
+            <h2>Your One-Stop Solution for All Local Services</h2>
+            <a href="#" class="btn-primary">Book Now</a>
+        </div>
+    </section>
+
+    <section class="location-search">
+        <div class="search-box">
+            <input type="text" placeholder="Search for Services">
+            <button>Search</button>
+        </div>
+    </section>
+
+     <!-- About Section -->
+     <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a team of dedicated professionals offering top-notch services to our local community. With years of experience and a commitment to quality, we are your go-to experts for all your needs.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <a href="#" class="service-link" data-target="plumbing.php" >
+                    <img src="plumber.jpg" alt="Plumbing">
+                    <h3>Plumbing</h3>
+                    
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="#">
+                    <img src="electrician.jpg" alt="Electrical">
+                    <h3>Electrical</h3>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="#">
+                    <img src="gas-repair.jpg" alt="Cleaning">
+                    <h3>Gas Repair</h3>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="#">
+                    <img src="gardening.jpg" alt="Gardening">
+                    <h3>Gardening</h3>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="#">
+                    <img src="painting.jpg" alt="Painting">
+                    <h3>Painting</h3>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="#">
+                    <img src="carpenter.jpg" alt="Carpentry">
+                    <h3>Carpentry</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Ready to get started? Contact us today!</p>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+    <!-- Add more content as needed -->
+     <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <h2>Login</h2>
+            <form action="login.php" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="btn-submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="toSignup">Signup here</a></p>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+<!-- Signup Modal -->
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeSignup">&times;</span>
+        <h2>Signup</h2>
+        <form id="signupForm" action="signup.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <span id="passwordError" style="color: red; display: none;">Passwords do not match!</span>
+
+            <button type="submit"  class="btn-submit">Signup</button>
+        </form>
+        <p>Already have an account? <a href="#" id="toLogin">Login here</a></p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Local Services. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

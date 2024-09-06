@@ -1,0 +1,440 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    box-shadow: 0px 3px 4px #c0c0c0;
+    padding: 20px;
+  
+}
+
+.main-nav {
+    display: flex;
+    color: aqua;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #F76C6C;
+}
+
+.main-nav-links,
+.navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav-links li,
+.navigation ul li {
+    margin-left: 20px;
+}
+
+.main-nav-links a,
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+/* Header Navigation Links */
+.navigation ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navigation ul li {
+    margin-left: 8px; /* Space between the links */
+}
+
+.navigation ul li a {
+    margin-left: 0px; /* No margin between individual links */
+    padding: 10px 15px;
+    background-color: #ffffff; /* White background for the links */
+    border-radius: 12px; /* Rounded corners */
+    text-decoration: none;
+    color: #333; /* Default text color */
+    transition: background-color 0.3s ease; 
+}
+
+.navigation ul li a:hover {
+    background-color: #f2f2f2; /* Light grey background on hover */
+    color: #d41333; /* Optional hover text color */
+}
+
+
+/* Adjusting link spacing for Register/Login/Sign Up */
+.nav-links li {
+    margin-left: 10px; /* Reduced space between the links */
+}
+
+.nav-links li:not(:last-child)::after {
+    content: ''; /* Removed the separator */
+}
+
+
+/*.navigation ul {
+    display: flex;
+    align-items: center;
+}
+
+.navigation ul li a {
+    margin-left: 11px;
+    padding: 10px 0px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 6cm;
+    transition: background-color ease; 
+}
+
+.navigation ul li a:hover {
+    background-color: #f2eaea;
+}
+
+/* Hero Section */
+.hero {
+    background: url(banner.jpg) no-repeat center center/cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.btn-primary {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff451d;
+    background-color: #ff451d;
+}
+
+/* Location and Search Section */
+.location-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.location-box,
+.search-box {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.location-box input,
+.search-box input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #ff451d;
+}
+
+.main-nav-links li a:hover {
+    /* Light grey background on hover */
+    color: #d41333; /* Optional hover text color */
+    
+}
+
+/* Services section */
+.services {
+    padding: 40px 20px; /* Adjust padding as needed */
+    text-align: center;
+    background-color: #f9f9f9;
+}
+.services h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+    gap: 20px; /* Space between each service item */
+    max-width: 1200px; /* Max width for the grid */
+    margin: 0 auto; /* Centering the grid */
+}
+
+.service-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effects */
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Lift the item slightly on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Intensify shadow on hover */
+}
+
+.service-item img {
+    width: 100%;
+    height: 180px; /* Fixed height for the images */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+.service-item h3 {
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+    font-size: 20px;
+    color: #333;
+    border-top: 1px solid #eee; /* Subtle top border */
+}
+
+.service-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: color 0.2s;
+}
+
+.service-item a:hover h3 {
+    color: #ff5900; /* Change the text color on hover */
+}
+
+/* About Section Styles */
+.about {
+    padding: 3rem 0;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.about p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact {
+    padding: 3rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.contact p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact form label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.contact form input:focus, .contact form textarea:focus {
+    border-color: #ff6600;
+}
+
+.contact form .btn {
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact form .btn:hover {
+    background-color: #ff451d;
+
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr; /* Single column for mobile devices */
+    }
+}
+
+.btn-book {
+    padding: 10px 20px;
+    background-color: #ff451d;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-book:hover {
+    background-color: #ff451d;
+
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    animation: fadeIn 0.4s;
+}
+
+/* Animation for popup */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label, form input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #575757;
+}
+

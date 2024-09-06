@@ -1,0 +1,254 @@
+/* Basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+}
+
+/* Container for split screen layout */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+header {
+    background-color: #fff;
+   /* box-shadow: 0px 3px 4px #c0c0c0;*/
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Horizontal, Vertical, Blur, Color */
+    position: relative; /* Ensure the shadow stays in place with scrolling */
+    z-index: 1000; /* Makes sure the header stays above other elements */
+}
+
+.main-nav {
+    display: flex;
+    color: aqua;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #F76C6C;
+}
+
+.main-nav-links,
+.navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav-links li,
+.navigation ul li {
+    margin-left: 20px;
+}
+
+.main-nav-links li, .home{
+    justify-content: left;
+}
+.main-nav-links a,
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+/* Header Navigation Links */
+.navigation ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navigation ul li {
+    margin-left: 8px; /* Space between the links */
+}
+
+.navigation ul li a {
+    margin-left: 0px; /* No margin between individual links */
+    padding: 10px 15px;
+    background-color: #ffffff; /* White background for the links */
+    border-radius: 12px; /* Rounded corners */
+    text-decoration: none;
+    color: #333; /* Default text color */
+    transition: background-color 0.3s ease; 
+}
+
+.navigation ul li a:hover {
+    background-color: #f2f2f2; /* Light grey background on hover */
+    color: #d41333; /* Optional hover text color */
+}
+
+
+/* Adjusting link spacing for Register/Login/Sign Up */
+.nav-links li {
+    margin-left: 10px; /* Reduced space between the links */
+}
+
+.nav-links li:not(:last-child)::after {
+    content: ''; /* Removed the separator */
+}
+
+
+
+/* Left Side (Logo or Info) */
+.left-side {
+    flex: 1;
+    background-image: url('sidebanner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box {
+    text-align: center;
+    color: #ffffff;
+}
+
+.logo-box p {
+    font-size: 18px;
+    color: #ff6b00;
+}
+
+/* Right Side (Form) */
+.right-side {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 8px;
+    width: 500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+form label {
+    display: block;
+    color: #000000;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6b00;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #e55a00;
+}
+
+form a {
+    color: #ff6b00;
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000000;
+    cursor: pointer;
+}
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6b00;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #e55a00;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    height: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
