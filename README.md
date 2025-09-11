@@ -6,11 +6,11 @@ The system is built using HTML, CSS, JavaScript, PHP, and Bootstrap, and hosted 
 
 ## 🚀 Features
 
-# User Authentication
+User Authentication
 
-# Signup with full name, email, and password
+Signup with full name, email, and password
 
-# Secure login and password confirmation
+Secure login and password confirmation
 
 #Service Booking
 
